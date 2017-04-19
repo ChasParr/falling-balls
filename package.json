@@ -1,0 +1,29 @@
+{
+  "name": "falling-balls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "build": "babel ./client --out-file ./hosted/bundle.js",
+    "watch": "babel --watch ./client --out-file ./hosted/bundle.js",
+    "nodemon": "nodemon --watch ./server ./server/app.js",
+    "start": "node ./server/app.js",
+    "pretest": "eslint ./server --fix",
+    "test": "echo \"tests complete\""
+  },
+  "author": "Chas Parr",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-env": "^1.3.2",
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3",
+    "xxhashjs": "^0.2.1"
+  }
+}
