@@ -8,10 +8,10 @@ const Names = {};
 
 // game constants
 const HEIGHT = 500;
-const WIDTH = 300;
-const GRAVITY = 10;
+//const WIDTH = 300; 
+//const GRAVITY = 10;
 const BOT_MARGIN = 20;
-const BALL_RAD = 10;
+//const BALL_RAD = 10;
 const USER_RAD = 10;
 
 const randColor = () => {
